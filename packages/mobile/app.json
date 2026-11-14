@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "icon": "./assets/icon.png",
+    "android": {
+      "package": "com.earbassk7q2.runable",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0B0A0F"
+      }
+    },
+    "extra": {
+      "apiUrl": "https://earbass-u79syli-preview-4200.runable.site/",
+      "applicationId": "earbass-u79syli",
+      "runableAuthIssuer": "https://api.runable.com/api/auth"
+    },
+    "ios": {
+      "bundleIdentifier": "com.earbassk7q2.runable",
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
+    },
+    "name": "Earbass",
+    "slug": "earbass",
+    "version": "1.0.0",
+    "scheme": "runable-earbass-u79syli",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-web-browser",
+      "expo-audio",
+      "expo-font",
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0B0A0F"
+        }
+      ]
+    ]
+  }
+}
